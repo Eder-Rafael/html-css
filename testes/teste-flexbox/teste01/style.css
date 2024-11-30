@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+    background-color: #111827;
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    height: 600px;
+    background-color: #312e81;
+
+    gap: 10px;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    background-color: #06b6d4;
+}
