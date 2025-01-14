@@ -13,32 +13,24 @@
             justify-items: stretch;
 
             /** Columns **/
-            grid-template-columns: repeat(auto-fill, 100px);
-
-            grid-template-areas:
-                "header header header header"
-                "main   main   main   aside"
-                "footer footer footer footer"
-            ;
+            grid-template-columns: [site-start] 1fr [content-start] repeat(4, 1fr) [site-end];
 
             /** Rows **/
-            grid-auto-rows: 200px;
+            grid-auto-rows: [site-top] 200px [content-top] 200px [content-bottom] 200px [site-bottom];
         }
 
-        header {
-            grid-area: header;
+        header,
+        footer {
+            grid-column: site-start / site-end;
         }
 
         main {
-            grid-area: main;
+            grid-column: content;
         }
 
         aside {
-            grid-area: aside;
-        }
-
-        footer {
-            grid-area: footer;
+            grid-column: site-start / content-start;
+            grid-row: content-top / content-bottom;
         }
 
         .wrapper * {
