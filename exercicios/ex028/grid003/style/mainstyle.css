@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.flex-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.flex-nav > ul {
+    display: flex;
+    align-items: center;
+}
+
+.flex-nav > ul > li {
+    margin-left: 20px;
+    font-size: 1.2em;
+}
+
+.flex-nav > ul > li > a {
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+main h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    border: 3px solid black;
+}
+
+.flex-section1 {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.flex-section1 > div {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+div.section-items > a {
+    color: white;
+    text-decoration: none;
+}
+
+div.section-items > a > p {
+    display: block;
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+div.section-items > a:hover {
+    text-decoration: underline;
+}
+
+/** GRID STYLE **/
+
+.grid-section {
+    display: grid;
+    max-width: 980px;
+    margin: 10px auto;
+    gap: 20px;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+}
+
+.grid-section > div:nth-child(n + 4) {
+    display: grid;
+    gap: 10px;
+    align-items: center;
+
+    grid-template-columns: 1fr 1fr;
+}
+
+#anuncio {
+    display: block;
+    grid-column: 1;
+    grid-row: 2 / 5;
+    align-self: flex-end;
+}
+
+.grid-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.grid-section a:hover {
+    text-decoration: underline;
+}
+
+.grid-section p.p3 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+a.img-peqs {
+    color: black;
+}
+
+.p3 {
+    background-color: white;
+    color: black;
+    font-size: 1.3em;
+}
+
+
+
+
+
+
+
+
+
